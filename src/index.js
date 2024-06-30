@@ -1,8 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//This file only needs to import react, reactDOM and the App.js file 
+
+import React from 'react'; //React imported default 
+import ReactDOM from 'react-dom/client'; //ReactDOM imported default
+import App from './components/App'; //App.js imported
+
+//This is the only code necessary for this file. This is the file that is linked to the index.html. The second on our pyramid 
+//this file takes everything and renders it to the html file 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +14,3 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
